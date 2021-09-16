@@ -1,0 +1,7 @@
+{
+  "name": "app-vacinacao",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
