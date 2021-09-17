@@ -6,6 +6,11 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+    children: [
+      {
+      path: 'carteira-de-vacinacao',
+      loadChildren: () => import('../carteira-de-vacinacao/carteira-de-vacinacao.module').then( m => m.CarteiraDeVacinacaoPageModule)
+    },]
   }
 ];
 
@@ -14,3 +19,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class HomePageRoutingModule {}
+
+
