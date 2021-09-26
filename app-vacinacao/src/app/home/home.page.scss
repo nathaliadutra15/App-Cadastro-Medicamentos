@@ -1,27 +1,76 @@
-#container {
-  text-align: center;
 
-  position: absolute;
+nav {
+	margin: 0 auto;
+	background: #008FEA;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
   left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  background-color: #fff;
 }
 
-#container strong {
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+	position: relative;
+}
+
+nav ul li a {
+	display: block;
+	text-decoration: none;
+	padding: 1.3rem;
+}
+
+nav ul li ul li {
+	min-width: 190px;
+}
+
+.home-header {
+  color: #000;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.box-container {
+  display: flex;
+  flex-direction: row;
+}
+ion-button {
+  display: flex;
+  flex-direction: row;
+}
+img.icon-box {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.box-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 200px;
+  background-color: #fff;
+  box-shadow: 0 0 1px #000;
+  border-radius: 10px;
+  margin: 20px 15px;
+}
+.box-card--title {
   font-size: 20px;
-  line-height: 26px;
+  color: #000;
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
+.box-container a {
   text-decoration: none;
+  color: #666;
 }
