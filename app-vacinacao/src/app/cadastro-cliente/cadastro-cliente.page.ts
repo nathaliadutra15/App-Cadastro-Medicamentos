@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+interface IUsuario {
+  nome: string;}
+
 @Component({
   selector: 'app-cadastro-cliente',
   templateUrl: './cadastro-cliente.page.html',
@@ -11,5 +14,25 @@ export class CadastroClientePage implements OnInit {
 
   ngOnInit() {
   }
+  public texto = 'Meus Dados';
+
+public pessoa: IUsuario = {
+    nome: ' ',
+    
+  }
+
+  
+
+
+public switch = true;
+
+public input = '';
+
+inserir(pessoa: string): void {
+
+this.input = '';
+}
 
 }
+
+

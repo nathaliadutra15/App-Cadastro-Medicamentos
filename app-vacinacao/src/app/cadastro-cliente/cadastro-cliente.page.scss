@@ -1,0 +1,96 @@
+ion-toolbar{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 5 auto;
+    width: 100%;
+    --ion-color-primary:#008FEA;
+    }
+    
+    #Login{
+        border-radius: 120px;
+        border: 2px solid #008FEA;
+        padding: 8px;
+    }
+     #cont{
+    border-radius: 120px;
+        border: 2px solid #008FEA;
+        padding: 8px;
+    }
+    
+    #txt{
+       
+      height: 50px; ;
+        text-align: center
+    
+    }
+    
+    ion-avatar{
+    
+        height: 60px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    #corpocadastro{
+        color: black;
+       background:white;
+    
+    
+    }
+    
+    #UF{
+        background:white;
+    
+    }
+    #Genero{
+        background:white;
+    
+    }
+    
+    #dataNascimento{
+        background:white;
+    
+    }
+    #tipoSanguineo{
+        background:white;
+    
+    }
+    
+    
+    nav {
+        margin: 0 auto;
+        background: #008FEA;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+    
+    nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    nav ul li {
+        float: left;
+        position: relative;
+    }
+    
+    nav ul li a {
+        display: block;
+        text-decoration: none;
+        padding: 1.3rem;
+    }
+    
+    nav ul li ul li {
+        min-width: 190px;}
