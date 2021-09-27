@@ -1,16 +1,58 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header class="home-header" [translucent]="true">
+  <ion-toolbar class="home-header">
     <ion-title>
-      Blank
+      App carteira de vacinação
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-toolbar>
-    <ion-button routerLink="/carteira-de-vacinacao">Carteira de Vacinaçåo</ion-button>
-    <ion-button routerLink="/busca-local">Local Farmacia</ion-button>
-    <ion-button routerLink="/cadastro-cliente/">Cadastro de Cliente</ion-button>
-    <ion-button routerLink="/alarme/">Alarme</ion-button>
+    <div class="container">
+      <div class="box-container">
+        <ion-router-link routerLink="/carteira-de-vacinacao">
+          <div class="box-card">
+            <img class="icon-box" src="../../assets/icon/carteira_vacinacao.png" alt="">
+            <p class="box-card--title">Carteira de vacinação</p>
+          </div>
+        </ion-router-link>
+        <ion-router-link routerLink="/busca-local">
+          <div class="box-card">
+            <img class="icon-box" src="../../assets/icon/location.png" alt="">
+            <p class="box-card--title">Farmácia</p>
+          </div>
+        </ion-router-link>
+      </div>
+      <div class="box-container">
+        <ion-router-link routerLink="/cadastro-cliente/">
+          <div class="box-card">
+            <img class="icon-box" src="../../assets/icon/registration.png " alt="">
+            <p class="box-card--title">Cadastro de cliente</p>
+          </div>
+        </ion-router-link>
+        <ion-router-link routerLink="/alarme/">
+          <div class="box-card">
+            <img class="icon-box" src="../../assets/icon/alarm-clock.png" alt="">
+            <p class="box-card--title">Alarme</p>
+          </div>
+        </ion-router-link>
+      </div>
+    </div>
   </ion-toolbar> 
+
+  <nav id="barra_navegacao">
+    <ul>
+      <li><a href="#"><img src="https://img.icons8.com/ios-filled/30/000000/pharmacy-shop.png" /></a></li>
+      <li><a href="#"><img src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/30/000000/external-tablets-hospital-healthcare-flatart-icons-solid-flatarticons.png" /></a>
+     </li>
+      <li><a href="#"><img src="https://img.icons8.com/ios-filled/30/000000/home.png" /></a></li>
+      <li><a href="#"><img
+                  src="https://img.icons8.com/external-wanicon-solid-wanicon/30/000000/external-vaccine-health-checkup-wanicon-solid-wanicon.png" /></a>
+      </li>
+      <li><a href="#"><img src="https://img.icons8.com/ios-filled/30/000000/hospital-3.png" /></a></li>
+  </ul>
+
+  </nav>
+
+
 
