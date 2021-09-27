@@ -1,0 +1,90 @@
+select{
+    background-color: white;
+    color:black;
+    margin: 10px;
+    padding: 8px;
+    border-color: #008FEA;
+    border-radius: 12px;
+  }
+  
+  #body_alarme{
+    background-color: white;
+    color:black;
+    padding: 8px;
+    
+  }
+  
+  #data_inicial, #horario_inicial, #quantidade_pilulas {
+    background-color: white;
+    color:black;
+    margin: 10px;
+    padding: 5px;
+    border-color: #008FEA;
+    border-radius: 12px;
+    text-align: center;
+    
+  }
+  
+  option{
+    color: black;
+  
+  }
+  label{
+    margin: 13px;
+  }
+  
+  
+  nav {
+      margin: 0 auto;
+      background: #008FEA;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  
+  nav ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  nav ul li {
+      float: left;
+      position: relative;
+  }
+  
+  nav ul li a {
+      display: block;
+      text-decoration: none;
+      padding: 1.3rem;
+  }
+  
+  nav ul li ul li {
+      min-width: 190px;
+  }
+  
+  ion-toggle {
+    --background: #008FEA;
+    --background-checked: #76cbff;
+  
+    --handle-background: #76cbff;
+    --handle-background-checked: #008FEA;
+    width: 50px;
+    height: 30px;
+  }
+  
+  #quantidade_pilulas{
+    width: 100px;
+  }
+  
+  ion-title{
+    background-color: white;
+    color: #008FEA;
+    text-align: center;
+    
+  }
+  
+  ion-toolbar{
+    --background: white;
+  }
