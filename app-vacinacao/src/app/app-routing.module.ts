@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'alarme',
     loadChildren: () => import('./alarme/alarme.module').then( m => m.AlarmePageModule)
   },
+  {
+    path: 'quem-somos',
+    loadChildren: () => import('./quem-somos/quem-somos.module').then( m => m.QuemSomosPageModule)
+  },
 ];
 
 @NgModule({
