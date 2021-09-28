@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 select{
     background-color: white;
     color:black;
@@ -5,12 +6,14 @@ select{
     padding: 8px;
     border-color: #008FEA;
     border-radius: 12px;
+    font-family: Rubik;
   }
   
   #body_alarme{
     background-color: white;
     color:black;
     padding: 8px;
+    font-family: Rubik;
     
   }
   
@@ -22,15 +25,18 @@ select{
     border-color: #008FEA;
     border-radius: 12px;
     text-align: center;
+    font-family: Rubik;
     
   }
   
   option{
     color: black;
+    font-family: Rubik;
   
   }
   label{
     margin: 13px;
+    font-family: Rubik;
   }
   
   
@@ -62,29 +68,32 @@ select{
   
   nav ul li ul li {
       min-width: 190px;
+      
   }
   
   ion-toggle {
-    --background: #008FEA;
-    --background-checked: #76cbff;
-  
-    --handle-background: #76cbff;
-    --handle-background-checked: #008FEA;
+    --background: #76cbff;
+    --background-checked: #008fea;
+    font-family: Rubik;
+    --handle-background: #008fea;
+    --handle-background-checked: #76cbff;
     width: 50px;
     height: 30px;
   }
   
   #quantidade_pilulas{
     width: 100px;
+    font-family: Rubik;
   }
   
   ion-title{
-    background-color: white;
-    color: #008FEA;
+    font-family: Rubik;
+    background-color: #008FEA;
+    color: white;
     text-align: center;
     
   }
   
   ion-toolbar{
-    --background: white;
+    --background: #008FEA;
   }
