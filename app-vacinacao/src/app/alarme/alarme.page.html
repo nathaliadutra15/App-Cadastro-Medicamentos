@@ -6,10 +6,10 @@
 
 <ion-content [fullscreen]="true">
   <div id="body_alarme">
-  <ion-header collapse="condense">
-  </ion-header>
-  <br>
-  <label><strong>Informe a recomendação médica de uso </strong></label> <br>
+    <ion-header collapse="condense">
+    </ion-header>
+    <br>
+    <label><strong>Informe a recomendação médica de uso </strong></label> <br>
     <select id="selecionarRemedio">
       <option hidden selected="true">Selecione o remédio</option>
       <option value="Amoxicilina">Amoxicilina</option>
@@ -17,7 +17,7 @@
       <option value="Dipirona">Dipirona</option>
       <option value="Gardenal">Gardenal</option>
       <option value="adicionarRemedio">Adicionar remédio...</option>
-    </select>                                                  
+    </select>
     <select id="selecionarIntervalo">
       <option hidden selected="true">Intervalo/h</option>
       <option value="2">2 horas</option>
@@ -28,41 +28,41 @@
       <option value="adicionarIntervalo">Personalizar...</option>
 
     </select><br><br>
-    
-    
-      <label><strong>Informe quando você irá começar</strong></label> <br>
-      <input type="time" name="horario_inicial" id="horario_inicial">
-      <input type="date" name="data_inicial" id="data_inicial">
 
-      <select id="selecionarPeriodo">
-        <option hidden selected="true">Por quanto tempo você irá tomar ?</option>
-        <option value="5 dias">5 dias</option>
-        <option value="7 dias">1 semana</option>
-        <option value="14 dias">2 semanas</option>
-        <option value="21 dias">3 semanas</option>
-        <option value="sempre">Até eu desativar</option>
-        <option value="adicionarTempo">Personalizar...</option>
-      </select>
-<br><br>
-      <label><strong>Informe a quantidade inicial de pílulas</strong></label> <br>
-      <input type="number" name="quantidade_pilulas" id="quantidade_pilulas">
-      <br>
-      <label>Líquido</label><br>
-      <ion-toggle value=""></ion-toggle>   
-      <br><br><br><br>
+
+    <label><strong>Informe quando você irá começar</strong></label> <br>
+    <input type="time" name="horario_inicial" id="horario_inicial">
+    <input type="date" name="data_inicial" id="data_inicial">
+
+    <select id="selecionarPeriodo">
+      <option hidden selected="true">Por quanto tempo você irá tomar ?</option>
+      <option value="5 dias">5 dias</option>
+      <option value="7 dias">1 semana</option>
+      <option value="14 dias">2 semanas</option>
+      <option value="21 dias">3 semanas</option>
+      <option value="sempre">Até eu desativar</option>
+      <option value="adicionarTempo">Personalizar...</option>
+    </select>
+    <br><br>
+    <label><strong>Informe a quantidade inicial de pílulas</strong></label> <br>
+    <input type="number" name="quantidade_pilulas" id="quantidade_pilulas">
+    <br>
+    <label>Líquido</label><br>
+    <ion-toggle value=""></ion-toggle>
+    <br><br><br><br>
   </div>
   <nav id="barra_navegacao">
     <ul>
-      <li><a href="#"><img src="https://img.icons8.com/ios-filled/30/000000/pharmacy-shop.png" /></a></li>
-      <li><a href="#"><img src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/30/000000/external-tablets-hospital-healthcare-flatart-icons-solid-flatarticons.png" /></a>
-     </li>
-      <li><a href="#"><img src="https://img.icons8.com/ios-filled/30/000000/home.png" /></a></li>
-      <li><a href="#"><img
-                  src="https://img.icons8.com/external-wanicon-solid-wanicon/30/000000/external-vaccine-health-checkup-wanicon-solid-wanicon.png" /></a>
+      <li><a href="../busca-local/"><img src="https://img.icons8.com/ios-filled/30/000000/pharmacy-shop.png" /></a></li>
+      <li><a href="../alarme/"><img
+            src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/30/000000/external-tablets-hospital-healthcare-flatart-icons-solid-flatarticons.png" /></a>
       </li>
-      <li><a href="#"><img src="https://img.icons8.com/ios-filled/30/000000/hospital-3.png" /></a></li>
-  </ul>
-
+      <li><a href="../home/"><img src="https://img.icons8.com/ios-filled/30/000000/home.png" /></a></li>
+      <li><a href="../carteira-de-vacinacao/"><img
+            src="https://img.icons8.com/external-wanicon-solid-wanicon/30/000000/external-vaccine-health-checkup-wanicon-solid-wanicon.png" /></a>
+      </li>
+      <li><a href="../busca-local/"><img src="https://img.icons8.com/ios-filled/30/000000/hospital-3.png" /></a></li>
+    </ul>
   </nav>
-  
+
 </ion-content>
