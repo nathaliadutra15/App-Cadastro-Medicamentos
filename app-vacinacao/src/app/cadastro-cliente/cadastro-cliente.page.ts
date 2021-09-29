@@ -14,7 +14,7 @@ export class CadastroClientePage implements OnInit {
 
   ngOnInit() {
   }
-  public texto = 'Meus Dados';
+  public texto = 'Maria Fernanda Souza';
 
 public pessoa: IUsuario = {
     nome: ' ',
