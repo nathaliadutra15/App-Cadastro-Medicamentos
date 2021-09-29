@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 .home {
     background-color: rgb(131, 205, 255);
     text-align: center;
@@ -8,11 +10,12 @@
     justify-content: center;
     width: auto;
     padding: 45px;
+    font-family: Rubik;
 }
 
 body {
     background-color: rgb(131, 205, 255);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Rubik;
     width: 100%;
 }
 
@@ -23,10 +26,12 @@ h1 {
 
 .minha-home {
     color: white;
+    font-family: Rubik;
 }
 
 p {
     padding-bottom: 15px;
+    text-align: justify;
 }
 
 .doctor-img {
@@ -44,27 +49,30 @@ button {
     background: -ms-linear-gradient(top, #3e779d, #65a9d7);
     background: -o-linear-gradient(top, #3e779d, #65a9d7);
     padding: 9.5px 19px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    border-radius: 40px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
     -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
     -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
     box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
     text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
     color: #ffffff;
     font-size: 15px;
-    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+    font-family: Rubik;
     text-decoration: none;
     vertical-align: middle;
+
 }
 
 button:hover {
     border-top-color: #f2faff;
     background: #f2faff;
     color: rgb(0, 0, 0);
+    font-family: Rubik;
 }
 
 button:active {
     border-top-color: #000000;
     background: #000000;
+    font-family: Rubik;
 }
