@@ -1,30 +1,76 @@
-nav {
-    margin: 0 auto;
-    background: #008FEA;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+.info-vacina {
+    display: flex;
+    justify-content: space-around;
+    font-family: rubik;
 }
 
-nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.container-todo {
+    background-color: white;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    font-family: rubik;
 }
 
-nav ul li {
-    float: left;
-    position: relative;
+.titulo {
+    color: rgb(57, 87, 255);
+    text-align: center;
+    font-family: rubik;
 }
 
-nav ul li a {
-    display: block;
-    text-decoration: none;
-    padding: 1.3rem;
+.vacina-img {
+    width: px;
+    padding: 20px;
 }
 
-nav ul li ul li {
-    min-width: 190px;
-    
+h1 {
+    font-size: 25px;
+    font-family: rubik;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    font-family: rubik;
+}
+
+.info-pessoa {
+    text-align: center;
+    background-color: white;
+    font-family: rubik;
+}
+
+.menu-vacina {
+    margin: 8px;
+}
+
+.info-filho-vacina {
+    background-color: white;
+    width: 130px;
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(57, 87, 255);
+    padding: 5px;
+    justify-content: space-around;
+    margin: 5px;
+    font-family: rubik;
+}
+
+.info-filho-vacina2 {
+    background-color: white;
+    width: 130px;
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(57, 87, 255);
+    padding: 5px;
+    justify-content: space-around;
+    margin: 5px;
+    font-family: rubik;
+}
+
 }
