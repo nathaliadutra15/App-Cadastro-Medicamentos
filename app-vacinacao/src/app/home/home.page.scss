@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
 nav {
 	margin: 0 auto;
@@ -52,6 +53,7 @@ img.icon-box {
   width: 70px;
   height: 70px;
   margin-bottom: 10px;
+  
 }
 .box-card {
   text-align: center;
@@ -62,13 +64,17 @@ img.icon-box {
   width: 150px;
   height: 200px;
   background-color: #fff;
-  box-shadow: 0 0 1px #000;
+  box-shadow: 0 0 1px #008FEA;
   border-radius: 10px;
   margin: 20px 15px;
+  font-family: Rubik;
+
 }
 .box-card--title {
   font-size: 20px;
   color: #000;
+  font-family: Rubik;
+
 }
 .box-container a {
   text-decoration: none;

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 .info-vacina {
     display: flex;
     justify-content: space-around;
@@ -72,33 +73,4 @@ h2 {
     font-family: rubik;
 }
 
-nav {
-    margin: 0 auto;
-    background: #008FEA;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    font-family: rubik;
-}
-
-nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-nav ul li {
-    float: left;
-    position: relative;
-}
-
-nav ul li a {
-    display: block;
-    text-decoration: none;
-    padding: 1.3rem;
-}
-
-nav ul li ul li {
-    min-width: 190px;
 }
