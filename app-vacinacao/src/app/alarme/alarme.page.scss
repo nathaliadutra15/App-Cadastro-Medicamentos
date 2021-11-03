@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 select{
     background-color: white;
     color:black;
     margin: 10px;
     padding: 8px;
+    border-color: #008FEA;
+    border-radius: 12px;
+    font-family: Rubik;
+  }
+
+  #IntervaloH, #nomeMedicamento {
+    background-color: white;
+    color:black;
+    margin: 10px;
+    padding: 5px;
     border-color: #008FEA;
     border-radius: 12px;
     font-family: Rubik;
@@ -34,11 +45,11 @@ select{
     font-family: Rubik;
   
   }
+
   label{
     margin: 2px;
     font-family: Rubik;
   }
-  
   
   nav {
       margin: 0 auto;
@@ -86,12 +97,31 @@ select{
     font-family: Rubik;
   }
   
+  ion-fab-button{
+    display:inline-flex;
+    margin: 0px;
+    margin-bottom: auto;
+    padding: 8px;
+    margin-left: 0px;
+    --background: #008FEA
+  }
+
   ion-title{
     font-family: Rubik;
     background-color: #008FEA;
     color: white;
     text-align: center;
     
+  }
+
+  ion-button{
+    background-color: white;
+    --background: #008FEA;
+    color:white;
+    border-color: #008FEA;
+    --border-radius: 20px;
+    font-family: Rubik;
+    margin-left: 160px;
   }
   
   ion-toolbar{

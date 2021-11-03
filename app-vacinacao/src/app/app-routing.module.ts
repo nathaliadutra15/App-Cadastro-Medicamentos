@@ -35,9 +35,14 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
     
-  },  {
+  },
+  {
     path: 'busca-posto',
     loadChildren: () => import('./busca-posto/busca-posto.module').then( m => m.BuscaPostoPageModule)
+  },
+  {
+    path: 'meus-remedios/:id',
+    loadChildren: () => import('./meus-remedios/meus-remedios.module').then( m => m.MeusRemediosPageModule)
   },
 
 ];
