@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import Iremedio from '../Interfaces/iremedio';
 import { DadosRemediosService } from '../dados-remedios.service';
+import { AlarmePage } from '../alarme/alarme.page';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 
 @Component({
@@ -16,7 +18,7 @@ export class MeusRemediosPage implements OnInit {
   public remedio: Iremedio;
   public servico: DadosRemediosService;
 
-  constructor(route: ActivatedRoute, dadosServico: DadosRemediosService) {
+  constructor(route: ActivatedRoute, dadosServico: DadosRemediosService, public cadastroRemedios: AlarmePage, private httpClient: HttpClient) {
     this.rota = route;
     this.servico = dadosServico;
     this.dados = this.servico.buscarRemedio();
@@ -27,5 +29,6 @@ export class MeusRemediosPage implements OnInit {
     this.id = Number(this.rota.snapshot.paramMap.get('id'));
     this.remedio = this.dados.find(p => p.id === this.id);
   }
+
 
 }

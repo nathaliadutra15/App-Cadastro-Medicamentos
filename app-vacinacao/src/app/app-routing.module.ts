@@ -43,7 +43,11 @@ const routes: Routes = [
   {
     path: 'meus-remedios/:id',
     loadChildren: () => import('./meus-remedios/meus-remedios.module').then( m => m.MeusRemediosPageModule)
+  },  {
+    path: 'meus-alarmes',
+    loadChildren: () => import('./meus-alarmes/meus-alarmes.module').then( m => m.MeusAlarmesPageModule)
   },
+
 
 ];
 

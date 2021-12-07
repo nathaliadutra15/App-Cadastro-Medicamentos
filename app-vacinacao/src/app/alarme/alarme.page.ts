@@ -1,5 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
+
 
 @Component({
   selector: 'app-alarme',
@@ -14,53 +16,50 @@ export class AlarmePage {
   public api;
   public switch = false;
   public quantidade_pilulas = 0;
-  public listaRemedios = [];
 
-  constructor( private httpClient: HttpClient) {
+  constructor(private httpClient: HttpClient, private localNotifications: LocalNotifications) {
+  }
+
+  async notificarLembrete() {
+
+    this.adicionarRemedio();
+
+    const milissegundo = this.intervaloH * 3600000;
+
+    this.localNotifications.schedule({
+      text: 'Hora de tomar seu remédio: ' + this.nomeMedicamento,
+      title: 'Dr.Lembrete',
+      trigger: { at: new Date(new Date().getTime() + milissegundo) },
+      led: 'FF0000',
+      sound: 'file://resources/audio/beep.mp3'
+    });
   }
 
 
-  async listarRemedios() {
-    //Fazendo uma requisição do body da nossa API criada
-    this.httpClient.get('http://localhost:4000/medicamentos/').subscribe((response) => {
-      //Passando o body (a api) para uma variável
-      this.api = response;
-      //Passando para a variável, a quantidade de elementos dentro da API
-      let qntdApi = Object.keys(this.api).length;
+  adicionarRemedio() {
 
-      for (let i = 0; i < qntdApi; i++) {
-        this.listaRemedios[i] = this.api[i].nomeMedicamento
-      }
-      
-      this.listaRemedios.forEach(element => {
-        console.log(element)
-      });
-
-    })
-  }
-
-    adicionarRemedio(){
-
-      if (this.switch == true) {
-        this.quantidade_pilulas = 0;
-      }
-
-      let remedio = {
-        nomeMedicamento: this.nomeMedicamento,
-        intervaloH: this.intervaloH,
-        qntdPilula: this.quantidade_pilulas,
-        liquido: this.switch
-      };
-      
-      this.httpClient.post(`http://localhost:4000/novoMedicamento/`, remedio).subscribe(
-        resultado => {
-          console.log(resultado);
-        },
-        erro => {
-          console.log(erro);
-        }
-      );
+    if (this.switch == true) {
+      this.quantidade_pilulas = 0;
     }
+
+    let remedio = {
+      nomeMedicamento: this.nomeMedicamento.toUpperCase(),
+      intervaloH: this.intervaloH,
+      qntdPilula: this.quantidade_pilulas,
+      liquido: this.switch
+    };
+
+
+    this.httpClient.post(`http://localhost:4000/novoMedicamento/`, remedio).subscribe(
+      resultado => {
+        alert(resultado);
+      },
+      erro => {
+        console.log(erro);
+      }
+    );
+  }
+
 
 }
 

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+  
+  nav {
+    margin: 0 auto;
+    background: #008FEA;
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+  }
+  
+  nav ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  nav ul li {
+    float: left;
+    position:relative;
+  }
+  
+  nav ul li a {
+      display: block;
+      text-decoration: none;
+      padding: 1.3rem;
+  }
+  
+  nav ul li ul li {
+      min-width: 190px;
+      
+  }
+
+  p {
+      color:black;
+      font-family: Rubik;
+  }
+
+  #alarmes {
+    
+    padding: 15px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+  display: block;
+  margin-bottom: 15px;
+  border-style:double;
+  display:relative;
+ 
+}
+
+  #botoes {
+    
+    --background: #008FEA;
+    color:white;
+    border-color: #008FEA;
+    --border-radius: 20px;
+    font-family: Rubik;
+    margin-left: 1px;
+    display:inline;
+  }
+  
+
+  ion-title{
+    font-family: Rubik;
+    background-color: #008FEA;
+    color: white;
+    text-align: center;
+    
+  }
+
+  ion-button{
+    background-color: whitesmoke;
+    --background: #008FEA;
+    color:white;
+    border-color: #008FEA;
+    --border-radius: 20px;
+    font-family: Rubik;
+    display:inline-flex;
+  }
+  
+  ion-toolbar{
+    --background: #008FEA;
+  }
