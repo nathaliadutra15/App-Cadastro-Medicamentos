@@ -24,15 +24,6 @@ export class MeusAlarmesPage {
     this.listarRemedios();
   }
 
-  doRefresh(event) {
-    console.log('Begin async operation');
-
-    setTimeout(() => {
-      console.log('Async operation has ended');
-      event.target.complete();
-    }, 2000);
-  }
-
   async listarRemedios() {
     //Fazendo uma requisição do body da nossa API criada
     this.httpClient.get('http://localhost:4000/medicamentos/').subscribe((response) => {
@@ -93,6 +84,7 @@ export class MeusAlarmesPage {
 
 
   async entradaAtualizacao(id:number) {
+    const label = "Este remédio é líquido?"
     const alert = await this.alertController.create({
       cssClass: 'alertaAtualizar',
       header: 'Editar Alarme',
@@ -113,10 +105,12 @@ export class MeusAlarmesPage {
           placeholder: 'Quantidade de pílulas'
         },
         {
+          placeholder:'Líquido?'
+        },
+        {
           name: 'radio1',
           type: 'checkbox',
-          label: 'Líquido',
-          placeholder: 'Este remédio é líquido?',
+          placeholder: "Este remédio é líquido?",
           handler: () => {
             console.log('Radio 1 selected');
           },
@@ -133,6 +127,7 @@ export class MeusAlarmesPage {
           text: 'Salvar',
           handler: salvar => {
               this.nomeMedicamento = salvar.nomeMedicamento;
+              this.nomeMedicamento.toUpperCase();
               this.intervaloH = salvar.intervaloH;
 
               if (salvar.radio1 == 'on') {

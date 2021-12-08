@@ -15,7 +15,6 @@
     <ion-input type="number" name="IntervaloH" placeholder="Intervalo/h" [(ngModel)]="intervaloH" id="IntervaloH"></ion-input>
 
     <br>
-
     <ion-icon name="calendar-outline"></ion-icon>
     <label><strong>Informe quando você irá começar</strong></label> <br>
     <input type="time" name="horario_inicial" id="horario_inicial">
@@ -30,18 +29,20 @@
       <option value="sempre">Até eu desativar</option>
       <option value="adicionarTempo">Personalizar...</option>
     </select>
+    
     <br><br>
     <ion-icon name="bag-add-outline"></ion-icon>
     <label><strong>Informe a quantidade inicial de pílulas</strong></label> <br>
     <input type="number" name="quantidade_pilulas" [(ngModel)]="quantidade_pilulas" id="quantidade_pilulas">
-    <br>
+    <br><br>
     <ion-icon name="water"></ion-icon>
     <label>Líquido</label><br>
     <ion-toggle [(ngModel)]="switch"></ion-toggle>
 
-    <ion-button (click)="notificarLembrete()">
-      SALVAR
+    <a href="../meus-alarmes/">
+    <ion-button (click)="notificarLembrete()">SALVAR
     </ion-button>
+    </a>
 
     <br><br><br><br>
 
@@ -49,8 +50,8 @@
   <nav id="barra_navegacao">
     <ul>
       <li><a href="../busca-local/"><img src="https://img.icons8.com/ios-filled/30/000000/pharmacy-shop.png" /></a></li>
-      <li><a href="../alarme/"><img src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/30/000000/external-tablets-hospital-healthcare-flatart-icons-solid-flatarticons.png" /></a>
-     </li>
+      <li><a href="../meus-alarmes/"><img src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/30/000000/external-tablets-hospital-healthcare-flatart-icons-solid-flatarticons.png" /></a>
+      </li>
       <li><a href="../home/"><img src="https://img.icons8.com/ios-filled/30/000000/home.png" /></a></li>
       <li><a href="../carteira-de-vacinacao/"><img
                   src="https://img.icons8.com/external-wanicon-solid-wanicon/30/000000/external-vaccine-health-checkup-wanicon-solid-wanicon.png" /></a>

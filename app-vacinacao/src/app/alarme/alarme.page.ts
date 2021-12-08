@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { MeusAlarmesPage } from '../meus-alarmes/meus-alarmes.page';
 import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
 
 
@@ -17,14 +18,15 @@ export class AlarmePage {
   public switch = false;
   public quantidade_pilulas = 0;
 
-  constructor(private httpClient: HttpClient, private localNotifications: LocalNotifications) {
+
+  constructor(private httpClient: HttpClient, private localNotifications: LocalNotifications, public MeusAlarmesPage:MeusAlarmesPage) {
   }
 
   async notificarLembrete() {
 
     this.adicionarRemedio();
 
-    const milissegundo = this.intervaloH * 3600000;
+    const milissegundo = this.intervaloH * 60000;
 
     this.localNotifications.schedule({
       text: 'Hora de tomar seu remédio: ' + this.nomeMedicamento,
@@ -33,6 +35,7 @@ export class AlarmePage {
       led: 'FF0000',
       sound: 'file://resources/audio/beep.mp3'
     });
+
   }
 
 

@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
-.alertaAtualizar{
-color:red;
-}
   nav {
     margin: 0 auto;
     background: #008FEA;
@@ -26,7 +23,7 @@ color:red;
   nav ul li a {
       display: block;
       text-decoration: none;
-      padding: 1.3rem;
+      padding: 1.6rem;;
   }
   
   nav ul li ul li {
@@ -39,6 +36,19 @@ color:red;
       font-family: Rubik;
   }
 
+  #semRegistro{
+    color:black;
+    font-family: Rubik;
+    font-size: 20px;
+    margin-top: 150px;
+  }
+
+  #procurando{
+    opacity: 35%;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+
   #alarmes {
     
     padding: 15px;
@@ -49,6 +59,11 @@ color:red;
   border-style:double;
   display:relative;
  
+}
+
+ion-fab {
+  margin-bottom: 90px;
+  
 }
 
   #botoes {

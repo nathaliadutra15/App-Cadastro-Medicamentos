@@ -72,9 +72,9 @@ select{
   }
   
   nav ul li a {
-      display: block;
-      text-decoration: none;
-      padding: 1.3rem;
+    display: block;
+    text-decoration: none;
+    padding: 1.6rem;
   }
   
   nav ul li ul li {
@@ -121,7 +121,8 @@ select{
     border-color: #008FEA;
     --border-radius: 20px;
     font-family: Rubik;
-    margin-left: 160px;
+    margin-left: 300px;
+    margin-top: 30px;
   }
   
   ion-toolbar{

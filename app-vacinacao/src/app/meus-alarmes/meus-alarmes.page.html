@@ -20,6 +20,19 @@
     </div>  
   </div>
 
+  <div id="semRegistro" *ngIf="listaRemedios.length == 0">
+    <p align="center"><strong>Você ainda não tem alarmes cadastrados</strong></p>
+    <img id="procurando" src="https://static.vecteezy.com/system/resources/previews/002/736/039/non_2x/doctor-wearing-medical-mask-with-magnifying-glass-character-free-vector.jpg"/>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <a href="../alarme/">
+    <ion-fab-button>
+      <ion-icon name="arrow-forward-circle"></ion-icon>
+    </ion-fab-button>
+  </a>
+  </ion-fab>
+
   <nav id="barra_navegacao">
     <ul>
       <li><a href="../busca-local/"><img src="https://img.icons8.com/ios-filled/30/000000/pharmacy-shop.png" /></a></li>
