@@ -1,4 +1,4 @@
-#Parte do Aplicativo de Alarme de Remédios
+# Parte do Aplicativo de Alarme de Remédios
 
 Este repositório contém a tela que foi criada por mim durante o projeto proposto na matéria "Computação para Dispositivos Móveis", onde os grupos deveriam elaborar um aplicativo.
 O aplicativo foi desenvolvido utilizando o framework Ionic. Para o frontend foi utilizado SCSS para estilizar, HTML e o framework Angular para trazer alguns dados do backend
