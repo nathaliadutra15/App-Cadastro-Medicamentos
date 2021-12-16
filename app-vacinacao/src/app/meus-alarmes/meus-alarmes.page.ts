@@ -20,9 +20,12 @@ export class MeusAlarmesPage {
   public quantidade_pilulas = 0;
 
 
-  constructor(public httpClient: HttpClient, public alertController:AlertController) {
+  constructor(public httpClient: HttpClient, public alertController: AlertController) {
+    //Ao entrar na página, sempre será mostrado a lista de remédio
     this.listarRemedios();
   }
+
+
 
   async listarRemedios() {
     //Fazendo uma requisição do body da nossa API criada
@@ -32,6 +35,7 @@ export class MeusAlarmesPage {
       //Passando para a variável, a quantidade de elementos dentro da API
       let qntdApi = Object.keys(this.api).length;
 
+      //Percorrendo pelos itens da API para adicioná-los na lista.
       for (let i = 0; i < qntdApi; i++) {
         this.listaRemedios[i] = this.api[i]
       }
@@ -44,20 +48,20 @@ export class MeusAlarmesPage {
       //Passando o body (a api) para uma variável
       this.api = response;
       //Passando para a variável, a quantidade de elementos dentro da API
-      
+
     });
     return String(this.api[0].nomeMedicamento);
   }
-  
+
 
 
   async deletarRemedio(id: number) {
     this.httpClient.delete(`http://localhost:4000/removerMedicamento/${id}`).subscribe((response) => {
       alert(response);
     },
-    erro => {
-      console.log(erro);
-    });
+      erro => {
+        console.log(erro);
+      });
 
     this.listarRemedios();
   }
@@ -74,7 +78,7 @@ export class MeusAlarmesPage {
 
     this.httpClient.put(`http://localhost:4000/atualizarMedicamento/${id}`, remedio).subscribe(
       resultado => {
-        alert(resultado);
+        console.log(resultado);
       },
       erro => {
         console.log(erro);
@@ -82,9 +86,7 @@ export class MeusAlarmesPage {
     );
   }
 
-
-  async entradaAtualizacao(id:number) {
-    const label = "Este remédio é líquido?"
+  async entradaAtualizacao(id: number) {
     const alert = await this.alertController.create({
       cssClass: 'alertaAtualizar',
       header: 'Editar Alarme',
@@ -92,7 +94,7 @@ export class MeusAlarmesPage {
         {
           name: 'nomeMedicamento',
           type: 'text',
-          placeholder:'Nome do medicamento'
+          placeholder: 'Nome do medicamento'
         },
         {
           name: 'intervaloH',
@@ -105,12 +107,11 @@ export class MeusAlarmesPage {
           placeholder: 'Quantidade de pílulas'
         },
         {
-          placeholder:'Líquido?'
+          placeholder: 'Líquido?'
         },
         {
           name: 'radio1',
           type: 'checkbox',
-          placeholder: "Este remédio é líquido?",
           handler: () => {
             console.log('Radio 1 selected');
           },
@@ -126,22 +127,24 @@ export class MeusAlarmesPage {
         {
           text: 'Salvar',
           handler: salvar => {
-              this.nomeMedicamento = salvar.nomeMedicamento;
-              this.nomeMedicamento.toUpperCase();
-              this.intervaloH = salvar.intervaloH;
+            this.nomeMedicamento = salvar.nomeMedicamento;
+            this.nomeMedicamento.toUpperCase();
+            this.intervaloH = salvar.intervaloH;
 
-              if (salvar.radio1 == 'on') {
-                this.quantidade_pilulas = 0;
-                this.switch = true;
-              } else {
-                this.quantidade_pilulas = salvar.qntdPilula;
-                this.switch = false;
-              }
+            if (salvar.radio1 == 'on') {
+              this.quantidade_pilulas = 0;
+              this.switch = true;
+            } else {
+              this.quantidade_pilulas = salvar.qntdPilula;
+              this.switch = false;
+            }
 
-              this.atualizarRemedio(id);
+            this.atualizarRemedio(id);
+            location.reload();
           },
         },
-      ]});
+      ]
+    });
 
     await alert.present();
   }

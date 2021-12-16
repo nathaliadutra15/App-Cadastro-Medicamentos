@@ -23,7 +23,7 @@
   nav ul li a {
       display: block;
       text-decoration: none;
-      padding: 1.6rem;;
+      padding: 1.4rem;;
   }
   
   nav ul li ul li {
@@ -36,6 +36,17 @@
       font-family: Rubik;
   }
 
+  ion-label {
+    color:black;
+    font-family: Rubik;
+    font-weight: bold;
+}
+
+ion-tabs{
+  z-index:-1
+}
+
+
   #semRegistro{
     color:black;
     font-family: Rubik;
@@ -44,9 +55,11 @@
   }
 
   #procurando{
-    opacity: 35%;
-    margin-left: 100px;
-    margin-top: 50px;
+    opacity: 45%;
+    margin-left: 50px;
+    margin-right: 50px;
+    z-index: -1;
+    position: relative;
   }
 
   #alarmes {
@@ -64,6 +77,11 @@
 ion-fab {
   margin-bottom: 90px;
   
+}
+
+ion-tab-bar, ion-tab-button {
+  background:#008FEA;
+  --border:none;
 }
 
   #botoes {

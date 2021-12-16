@@ -74,7 +74,7 @@ select{
   nav ul li a {
     display: block;
     text-decoration: none;
-    padding: 1.6rem;
+    padding: 1.4rem;
   }
   
   nav ul li ul li {
@@ -127,4 +127,24 @@ select{
   
   ion-toolbar{
     --background: #008FEA;
+  }
+
+  ion-fab {
+    margin-bottom: 90px;
+    
+  }
+  
+  ion-tab-bar, ion-tab-button {
+    background:#008FEA;
+    --border:none;
+  }
+
+  ion-label {
+    color:black;
+    font-family: Rubik;
+    font-weight: bold;
+  }
+
+  ion-tabs {
+    z-index:-1
   }

@@ -1,36 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
-nav {
-	margin: 0 auto;
-	background: #008FEA;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: #008FEA;
-}
-
-nav ul {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-
-nav ul li {
-	float: left;
-	position: relative;
-}
-
-nav ul li a {
-	display: block;
-	text-decoration: none;
-	padding: 1.6rem;
-}
-
-nav ul li ul li {
-	min-width: 190px;
-}
-
 .home-header {
   color: #000;
 }
@@ -63,8 +32,6 @@ img.icon-box {
   align-items: center;
   width: 150px;
   height: 200px;
-  background-color: #fff;
-  box-shadow: 0 0 1px #008FEA;
   border-radius: 10px;
   margin: 20px 15px;
   font-family: Rubik;
@@ -79,4 +46,24 @@ img.icon-box {
 .box-container a {
   text-decoration: none;
   color: #666;
+}
+
+ion-fab {
+  margin-bottom: 90px;
+  
+}
+
+ion-tab-bar, ion-tab-button {
+  background:#008FEA;
+  --border:none;
+}
+
+ion-label {
+  color:black;
+  font-family: Rubik;
+  font-weight: bold;
+}
+
+ion-tabs {
+  z-index:-1
 }

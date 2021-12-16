@@ -8,8 +8,8 @@ const routes: Routes = [
     component: HomePage,
     children: [
       {
-      path: 'carteira-de-vacinacao',
-      loadChildren: () => import('../carteira-de-vacinacao/carteira-de-vacinacao.module').then( m => m.CarteiraDeVacinacaoPageModule)
+      path: 'meus-alarmes',
+      loadChildren: () => import('../meus-alarmes/meus-alarmes-routing.module').then( m => m.MeusAlarmesPageRoutingModule)
     },]
   }
 ];

@@ -2,6 +2,7 @@
   <ion-toolbar>
     <ion-title><strong> Meus Alarmes</strong></ion-title>
   </ion-toolbar>
+  
 </ion-header>
 
 <ion-content>
@@ -15,7 +16,9 @@
     </div>
 
     <div id="botoes">
-      <ion-button (click)="deletarRemedio(remedio.id)">Excluir</ion-button>
+      <a href="../meus-alarmes/">
+        <ion-button (click)="deletarRemedio(remedio.id)">Excluir</ion-button>
+      </a>
       <ion-button (click)="entradaAtualizacao(remedio.id)">Editar</ion-button>
     </div>  
   </div>
@@ -28,22 +31,27 @@
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <a href="../alarme/">
     <ion-fab-button>
-      <ion-icon name="arrow-forward-circle"></ion-icon>
+      <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </a>
   </ion-fab>
 
-  <nav id="barra_navegacao">
-    <ul>
-      <li><a href="../busca-local/"><img src="https://img.icons8.com/ios-filled/30/000000/pharmacy-shop.png" /></a></li>
-      <li><a href="../meus-alarmes/"><img src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/30/000000/external-tablets-hospital-healthcare-flatart-icons-solid-flatarticons.png" /></a>
-     </li>
-      <li><a href="../home/"><img src="https://img.icons8.com/ios-filled/30/000000/home.png" /></a></li>
-      <li><a href="../carteira-de-vacinacao/"><img
-                  src="https://img.icons8.com/external-wanicon-solid-wanicon/30/000000/external-vaccine-health-checkup-wanicon-solid-wanicon.png" /></a>
-      </li>
-      <li><a href="../busca-posto/"><img src="https://img.icons8.com/ios-filled/30/000000/hospital-3.png" /></a></li>
-  </ul>
-  </nav>
-
+<ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button>
+        <a href="../home/"><img src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/30/000000/external-tablets-hospital-healthcare-flatart-icons-solid-flatarticons.png"/></a>
+        <ion-label>Remédios</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button>
+        <a href="../home/"><img src="https://img.icons8.com/ios-filled/33/000000/pharmacy-shop.png" /></a>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button>
+        <a href=#><img src="https://img.icons8.com/ios-filled/33/000000/place-marker--v1.png"/></a>
+        <ion-label>Farmácias</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+</ion-tabs>
 </ion-content>

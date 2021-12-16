@@ -1,8 +1,8 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { MeusAlarmesPage } from '../meus-alarmes/meus-alarmes.page';
 import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
-
+import { AlertController } from '@ionic/angular';
+import { empty } from 'rxjs';
 
 @Component({
   selector: 'app-alarme',
@@ -19,10 +19,12 @@ export class AlarmePage {
   public quantidade_pilulas = 0;
 
 
-  constructor(private httpClient: HttpClient, private localNotifications: LocalNotifications, public MeusAlarmesPage:MeusAlarmesPage) {
+  constructor(private httpClient: HttpClient, private localNotifications: LocalNotifications, public alertController: AlertController) {
   }
 
   async notificarLembrete() {
+
+
 
     this.adicionarRemedio();
 
@@ -37,6 +39,16 @@ export class AlarmePage {
     });
 
   }
+
+  async alertaDados() {
+    const alert = await this.alertController.create({
+      cssClass: 'alertaAtualizar',
+      header: 'Informações Pendentes!',
+      message: 'Preencha todos os campos.',
+      buttons: ['OK'],
+    });
+  }
+
 
 
   adicionarRemedio() {
@@ -55,14 +67,13 @@ export class AlarmePage {
 
     this.httpClient.post(`http://localhost:4000/novoMedicamento/`, remedio).subscribe(
       resultado => {
-        alert(resultado);
+        console.log(resultado);
       },
       erro => {
         console.log(erro);
       }
     );
   }
-
 
 }
 
