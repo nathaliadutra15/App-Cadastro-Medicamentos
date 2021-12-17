@@ -7,4 +7,9 @@ no frontend para o backend).
 
 No backend foi utilizado a linguagem Typescript e o Node.JS, onde a [API criada](https://github.com/nathaliadutra15/apiCadastroMedicamentos) está sendo consumida. Também foi trabalhada a tela de alerta utilizando AlertController, para que seja possível realizar a requição do tipo PUT quando o usuário desejar atualizar os dados do remédio. Por fim, foi implementado o uso de notificações locais para os lembretes dos medicamentos cadastrados utilizando o plugin local-notification juntamente com o Cordova.
 
-O nome do aplicativo se chamada "Dr.Lembrete" e o projeto completo pode ser encontrado neste [repositório](https://github.com/SUELENBOAS/PROJETO-APP).
+Veja algumas imagens referente às telas desenvolvidas:
+
+<img src="https://raw.githubusercontent.com/nathaliadutra15/App-Cadastro-Medicamentos/main/Imagens%20do%20Aplicativo/tela-sem-cadastros.PNG"></img>
+
+
+O nome do aplicativo é "Dr.Lembrete" e o projeto completo pode ser encontrado neste [repositório](https://github.com/SUELENBOAS/PROJETO-APP).
