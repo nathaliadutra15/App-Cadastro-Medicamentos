@@ -10,6 +10,7 @@ No backend foi utilizado a linguagem Typescript e o Node.JS, onde a [API criada]
 Veja algumas imagens referente às telas desenvolvidas:
 
 <img src="https://raw.githubusercontent.com/nathaliadutra15/App-Cadastro-Medicamentos/main/Imagens%20do%20Aplicativo/tela-sem-cadastros.PNG"></img>
+<img src="https://raw.githubusercontent.com/nathaliadutra15/App-Cadastro-Medicamentos/main/Imagens%20do%20Aplicativo/tela-com-cadastros.PNG"></img>
 
 
 O nome do aplicativo é "Dr.Lembrete" e o projeto completo pode ser encontrado neste [repositório](https://github.com/SUELENBOAS/PROJETO-APP).
