@@ -10,6 +10,7 @@ No backend foi utilizado a linguagem Typescript e o Node.JS, onde a [API criada]
 Veja algumas imagens referente às telas desenvolvidas:
 
 <img src="https://raw.githubusercontent.com/nathaliadutra15/App-Cadastro-Medicamentos/main/Imagens%20do%20Aplicativo/tela-sem-cadastros.PNG"></img>
+<img src="https://raw.githubusercontent.com/nathaliadutra15/App-Cadastro-Medicamentos/main/Imagens%20do%20Aplicativo/tela-cadastro.PNG"></img>
 <img src="https://raw.githubusercontent.com/nathaliadutra15/App-Cadastro-Medicamentos/main/Imagens%20do%20Aplicativo/tela-com-cadastros.PNG"></img>
 <img src="https://raw.githubusercontent.com/nathaliadutra15/App-Cadastro-Medicamentos/main/Imagens%20do%20Aplicativo/alert-para-atualizar.PNG"></img>
 
